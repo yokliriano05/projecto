@@ -1,0 +1,21 @@
+
+
+
+    {% extends "_estilo.html" %}
+    {% block content%}
+
+        <center><h2>eSocial Commerce™</h2></center>
+        <div class="formulario">
+
+        <form method="post" >
+            <center><h3>Nuevo usuario</h3></center>
+            <hr>
+            <p>Nombre de usuario <input type="text"  name="username"></p><label class="l-error">{{username_error}}</label>
+            <p>Contraseña <input type="password" name="password"></p><label class="l-error">{{password_error}}</label>
+            <p>Verificar contraseña <input type="password" name="verify"></p><label class="l-error"> {{verify_error}}</label>
+            <p>Email (Optional) <input type="text" name="email"></p><label class="l-error">{{email_error}}</label><br><hr>
+            <input name ="bregistrate" class="button" type="submit" value="Registrate" style="font-size: 16px">
+            
+        </form>
+        </div>
+    {% endblock %}
