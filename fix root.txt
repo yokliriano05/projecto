@@ -1,0 +1,3 @@
+bootrec /fixboot
+bootrec /fixmbr
+

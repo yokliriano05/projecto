@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	<title>Menus</title>
+	<style type="text/css">
+		body{
+		 margin: 0;
+		}
+		
+		.barra-menu ul{
+			width: 35%;
+			margin: 0 auto;
+			padding: 0;
+			
+		}
+		.barra-menu ul > li{
+			position: relative;
+			float: left;
+			width: 100px;
+			background-color: SteelBlue;
+
+		}
+		.barra-menu ul li{
+			list-style: none;
+			text-align: center;
+			border-radius: 3px 3px;
+		}
+		.barra-menu ul li a{
+			color: white;
+			/*padding: 1em 0;*/
+			display: block;
+			text-decoration: none;
+		}
+		.barra-menu ul li ul{
+			display: none;
+			position: absolute;
+
+		}
+		.barra-menu ul :hover{
+			color: black;
+			border-radius: 3px 3px;
+		}
+		.barra-menu ul li:hover ul{
+			display: block;
+			border-radius: 3px 3px;
+		}
+		.barra-menu ul li ul li:hover{
+			color: black;
+			background-color: blue;
+			color: black;
+			border-radius: 3px 3px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<nav class="barra-menu">
+		<ul>
+			<li><a href="#"> Inicio </a></li>
+			<li><a href="#"> Registrate</a></li>
+			<li><a href="#"> Inicia </a></li>
+			<li><a href="#"> Ayuda </a>
+				<ul>
+					<li><a href="#"> Nosotros</a></li>
+					<li><a href="#"> Centro de Ayuda</a></li>
+					<li><a href="#"> Preguntas </a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</body>
+</html>

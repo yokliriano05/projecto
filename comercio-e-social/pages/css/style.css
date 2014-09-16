@@ -1,0 +1,90 @@
+body{
+	margin: 0px;
+
+}
+
+.menubar{
+	
+	padding:0;
+	margin:0 auto;
+    list-style-type:none;
+    width:auto;
+    height:100px;
+	background-color: Steelblue;
+	box-shadow: 0px 3px;
+	opacity: 0.9;
+}
+
+.tmenubar tr{
+	position: absolute;
+	top: 10px;
+	left: 80%;
+
+	text-decoration:none; 
+	text-align: center;
+	font-size: 18px;
+	font-family: "Trebuchet MS";
+	
+
+}
+.tmenubar tr td:hover{
+	background: MediumAquamarine;
+}
+
+.lookup_area{
+	position: fixed;
+	left: 60%;
+	width: auto;
+
+}
+.lookup_text{
+	
+	
+
+	width: 300px;
+	height:25px;
+
+	color: black;
+	font-size:14px; 
+	font-family:Verdana;
+	text-align: left;
+	
+}
+.titles, .titles a{
+	color: MediumAquamarine;
+	text-align: center; 
+	font-family: "Script";
+	text-decoration: none;
+}
+
+p{
+	font-size: 30px;
+}
+
+.bar_dir{
+	text-decoration: none;
+	color: white;
+}
+
+.menu_tb{
+	text-align: center;
+}
+
+.left_col_bar{
+	margin: 0 100;
+	height: 600px;
+	width: 180px;
+	background-color: MediumAquamarine;
+}
+.left_col_bar li{
+	margin-top: 5px;
+	width: 100px;
+	height: 30px;
+	font-size: 18px;
+	font-family: "Trebuchet MS";
+
+}
+a{
+	text-decoration: none;
+
+}
