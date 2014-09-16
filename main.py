@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> master
 import webapp2, re, os, jinja2
 from Models import *
 
@@ -10,7 +7,7 @@ pages_dir = os.path.join(os.path.dirname(__file__),'pages')
 
 jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(pages_dir),
 	autoescape = True)
-#css_env = jinja2.Environment(loader = jinja2.FileSystemLoader(css_dir))
+
 PAGE_RE = r'(?:[a-zA-Z0-9_-]+/?)*'
 USERNAME_RE = re.compile(r"^[a-zA-Z0-9_-]{3,20}$")
 PASSWORD_RE = re.compile(r"^.{3,20}$")
