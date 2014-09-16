@@ -1,0 +1,153 @@
+body{
+    min-width: 1200px; 
+    min-height: 600px; 
+    margin: 0px 100px; 
+    font-family: "Trebuchet MS";
+}
+
+#NuevosArticulos{}
+#ImagenArticulo{width: 200px; height: 200px;}
+#Logo{
+    font-size: 21px;
+}
+#buscarTitulo{
+    font-weight: bold;
+    color: white;
+}
+.division-menu{
+    background-color: LimeGreen;
+    height: 60px;
+    margin: 0px -100px;
+}
+
+
+.barra-menu ul{
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.MenuItem{
+    text-align: center;
+    position: relative;
+    float: left;
+    width: auto;
+    padding: 5px;
+}
+
+.barra-menu ul li{
+    list-style: none;
+                 
+}
+
+#BuscarArticulos{
+    width:450px;
+    height:25px;
+    font-size:18px;
+    margin: 5px 130px;
+    background-color: Silver;
+    color:#fff;
+    border:none;
+    border-style:none;
+    border-color:green;
+}
+
+.barra-menu ul a{
+    color: white;
+    padding: 0.5em 0;
+    display: block;
+    text-decoration: none;
+}
+            .barra-menu ul li ul li{
+                text-align: left;
+                font-size: 14px;
+
+            }
+            .barra-menu ul li ul{
+                display: none;
+                position: absolute;
+                background-color: Steelblue;
+
+            }
+.barra-menu ul :hover{
+    color: maroon;            
+}
+
+ul li:hover ul{
+    display: block;
+                
+}
+
+.lookup_area{
+    position: fixed;
+    left: 60%;
+    width: auto;
+}            
+            
+.titles, .titles a{
+                color: MediumAquamarine;
+                text-align: center; 
+                
+                text-decoration: none;
+            }
+
+            a{
+                text-decoration: none;
+
+            }
+            h1{
+                color: MediumAquamarine;
+            }
+            .l-error{
+                color: red;
+                font-size: 16px;
+            }
+
+            .formulario{
+                text-align: right;
+                display:block; 
+                border: 2px solid lightgrey;
+                margin-left: 35%;
+                padding-top: 5px;
+                background-color: white;
+                width: 400px;
+                height: auto;
+                opacity: 0.8;
+                border-radius: 3px 3px;
+                padding: 10px;
+            }
+            footer{
+                font-size: 12px;
+                text-align: center;
+                margin-top: 15%;
+                clear: both;
+            }
+
+            .form_ingreso{
+                
+                display:block; 
+                border: 2px solid lightgrey;
+                margin-left: 35%;
+                padding-top: 5px;
+                background-color: white;
+                width: 400px;
+                height: auto;
+                opacity: 0.8;
+                border-radius: 3px 3px;
+                padding: 10px;
+
+            }
+            .contenido{
+                font-family: "Trebuchet MS";
+            }
+            
+            .IS_text{
+                font-size: 20px;
+                width: 200px;
+                height: 26px;
+            }
+            .seccion_imagen{
+                margin-left: 5px;
+                float:left;
+                border-radius:50%;
+
+            }

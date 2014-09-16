@@ -1,0 +1,13 @@
+
+	{% extends "_estilo.html" %}
+	{% block content %}
+    	<h1 class="titles">Bienvenido a<br><a class="title_text" href="/">Comercio Electronico Social</a></h1>
+		<div id="NuevosArticulos">
+		
+		{% for articulo in todos_articulos %}
+			<img src="#" alt="imagen..." class="ImagenArticulo" />
+			<h4>{{articulo}}</h4>
+		{% endfor %}
+		
+		</div>
+ 	{% endblock %}
