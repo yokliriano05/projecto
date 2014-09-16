@@ -9,6 +9,9 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
+- url: /[\w/]*complementos/
+  static_dir: complementos
+
 - url: .*
   script: main.app
 

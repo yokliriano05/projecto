@@ -1,0 +1,23 @@
+{% extends "_estilo.html" %}
+{% block content %}
+
+<div class="form_ingreso">
+
+  	<form  name="inicia-seccion-form" method="POST" enctype="multipart/form-data" action="">
+  	<center><h3>Agregar nuevo Articulo</h3></center>
+ 	<hr>
+  	  <img class="seccion_imagen" src="complementos/imagenes/41KqoCj+ExL._SL150_.jpg" alt="#imagen"  width="150px" height="150px"><br>
+	  <p><input  name="AR_nombre" type="text" value="" class="IS_text" placeholder="Nombre del articulo"></p>
+	  <p><textarea > {{AR_descipcion}}</textarea></p><br>
+	  <p><input  name="AR_precio" type="text" value="" class="IS_text" placeholder="Precio del articulo"></p>
+	  <p><input  name="AR_Cantidad" type="text" value="" class="IS_text" placeholder="Cantidad existente"></p>
+
+	  <p><input  name="AR_Categoria" type="text" value="" class="IS_text" placeholder="Categoria"></p>
+	  <hr>
+	  <input type="submit" value="Guardar articulo"/>
+	  
+	</form>
+  
+</div>
+
+{% endblock %}
