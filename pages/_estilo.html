@@ -13,46 +13,63 @@
     <div class="division-menu">
         <nav class="barra-menu">
             <ul>
-                <li class="MenuItem"><a href="/" id="Logo" > eSocial Commerce</a></li>
-                <li class="MenuItem"><span id="buscarTitulo">Buscar</span></li>
-                <li id="ParteBuscar" class="MenuItem"><form method="get"><input type="text" id="BuscarArticulos" class="MenuItem" value="{{aBuscar}}" title="Buscar" placehold="Buscar..." > </form> </li>
-                <li class="MenuItem"><a href="/" title="ir a inicio" > Inicio </a></li>
-                <li class="MenuItem"><a href="/registro"> Registrate</a></li>
-                <li class="MenuItem"><a href="/acceder"> Iniciar seccion </a></li>
-                <li class="MenuItem"><a href="#" >Bienvenido {{Usuario}}</a>
-                    <ul>
-                        <li><a href="#"> Articulos</a></li>
-                        <li class="MenuItem"><a href="/agregar-articulo"> Agregar Articulo</a></li>
-                        <li><a href="#"> Configuracion</a></li>
-                        <li><a href="#"> Salir</a></li>
-                    </ul>
-                </li>
-                <li class="MenuItem"><a href="#" > Ayuda </a>
-                    <ul>
-                        <li><a href="#"> Nosotros</a></li>
-                        <li><a href="#"> Centro de Ayuda</a></li>
-                        <li><a href="#"> Preguntas </a></li>
-                    </ul>
-                </li>
-
+                <li id="LiLogo"><a href="/" id="Logo" > eSocial Commerce</a></li>
+                <div class="ItemDerecha">
+                    <li class="MenuItem"><a href="/" title="ir a inicio" > Inicio </a></li>
+                    <li class="MenuItem"><a href="/registro"> Registrate</a></li>
+                    <li class="MenuItem"><a href="/acceder"> Iniciar seccion </a></li>
+                    <li class="MenuItem"><a href="#" >Bienvenido {{Usuario}}</a>
+                        <ul>
+                            <li class="SubMenuItem"><a href="/{{Usuario}}/articulos"> Articulos</a></li>
+                            <li class="SubMenuItem"><a href="/agregar-articulo"> Agregar Articulo</a></li>
+                            <li class="SubMenuItem"><a href="#"> Configuracion</a></li>
+                            <li class="SubMenuItem"><a href="#"> Salir</a></li>
+                        </ul>
+                    </li>
+                    <li class="MenuItem"><a href="#" > Ayuda </a>
+                        <ul>
+                            <li class="SubMenuItem"><a href="#">Nosotros</a></li>
+                            <li class="SubMenuItem"><a href="#">Centro de Ayuda</a></li>
+                            <li class="SubMenuItem"><a href="#">Preguntas</a></li>
+                        </ul>
+                    </li>
+                </div>
             </ul>
         </nav>
 	</div>
     <!-- fin del menu -->
-    
-    <div class="contenido">
-		{% block content %}
-		{% endblock %}
-    </div>
-    </body>
 
-    <footer class="pie-info">
-      <p><a href="/">eSocial Commerce</a> &middot; 
-        <a href="#">Terminos de uso</a> &middot; 
-        <a href="#">Politicas y privacidad</a> &middot; 
-        <a href="#">Ayuda</a> &middot; 
-        <a href="#">Contacto</a><br>
-        Copyring UCATECI Rep. Dom. Developers F. G. Castillo y Y. Liriano &copy; 2014-2015.
-      </p>
-    </footer>
+    <div id="Cuerpo">
+        <div id="BarraBusqueda">
+            <form method="get">
+            <select id="ListaCategorias" name="Categoria" title="Todas las Categorias">
+                <option value="todas">Todas las categorias</option>
+                <option value="libros">Libros</option>
+                <option value="celulares">Celulares</option>
+                <option value="computadoras">Computadoras</option>
+                <option value="fashion">Fashion &amp Moda</option>
+            </select>
+            <input type="text" id="BuscarArticulos" value="{{aBuscar}}" title="Buscar" placeholder=" Buscar..." /> 
+            <input type="submit" value="Buscar" class="Boton BuscarBoton" title="Buscar articulos" />
+            </form>
+
+        </div>
+    
+        <div class="contenido">
+    		{% block content %}
+    		{% endblock %}
+        </div>
+
+
+        <footer class="pie-info">
+          <p><a href="/">eSocial Commerce</a> &middot; 
+            <a href="#">Terminos de uso</a> &middot; 
+            <a href="#">Politicas y privacidad</a> &middot; 
+            <a href="#">Ayuda</a> &middot; 
+            <a href="#">Contacto</a><br>
+            Copyring UCATECI Rep. Dom. Developers F. G. Castillo y Y. Liriano &copy; 2014-2015.
+          </p>
+        </footer>
+    </div>
+</body>
 </http>

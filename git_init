@@ -1,0 +1,4 @@
+git init
+git config --global user.name "gers0n"
+git config --global user.email "gerson.fhillip@gmail.com"
+git pull origin
