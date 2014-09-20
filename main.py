@@ -73,8 +73,9 @@ class Inicio(Handler):
 		todos_articulos = list(TArticulos.all())
 		#username = self.request.cookies.get('Username')
 		if not todos_articulos:
-			todos_articulos = ["No hay articulos publicados"]
-		self.render("inicio.html", todos_articulos = todos_articulos)
+			todos_articulos = ["No hay articulos publicados","Fulanito", "Fulanito2","No hay articulos publicados","Fulanito", "Fulanito2"]
+		self.render("inicio.html", todos_articulos = todos_articulos, TituloPagin = "Inicio")
+
 class AgregarArticulo(Handler):
 	"""docstring for AgregarArticulo"""
 	def get(self):
@@ -122,7 +123,7 @@ class Registro(Handler):
 			self.redirect('/bienvenida?usuario='+self.request.get('usuario'))
 
 	def write_form(self, usuario = "", contrasena ="", verificacion ="", email ="", usuario_error ="", contrasena_error ="", verificacion_error ="", email_error =""):
-		self.render("registro.html", usuario_error = usuario_error, contrasena_error = contrasena_error, verificacion_error = verificacion_error,email_error = email_error)
+		self.render("registro.html", usuario_error = usuario_error, contrasena_error = contrasena_error, verificacion_error = verificacion_error,email_error = email_error, NoMostrar = True)
 
 
 
@@ -152,7 +153,7 @@ class BienvenidaR(Handler):
 class Acceder(Handler):
 
 	def get(self):
-		self.render("inicia-seccion.html")
+		self.render("inicia-seccion.html", NoMostrar = True)
 
 	def post(self):
 		self.redirect('/')

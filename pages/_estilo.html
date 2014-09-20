@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
-<http>
+<html>
 	
 	<head lang="ES">
-		<title></title>
+		<title>{{TituloPagina}}</title>
 		<link rel="stylesheet" type="text/css" href="complementos/css/style.css">
     </head>
 
@@ -39,7 +39,9 @@
 	</div>
     <!-- fin del menu -->
 
+    <!-- Barra de Busqueda -->
     <div id="Cuerpo">
+        {% if not NoMostrar%}
         <div id="BarraBusqueda">
             <form method="get">
             <select id="ListaCategorias" name="Categoria" title="Todas las Categorias">
@@ -49,12 +51,13 @@
                 <option value="computadoras">Computadoras</option>
                 <option value="fashion">Fashion &amp Moda</option>
             </select>
-            <input type="text" id="BuscarArticulos" value="{{aBuscar}}" title="Buscar" placeholder=" Buscar..." /> 
+            <input type="text" id="BuscarArticulos" value="{{aBuscar}}" name="q" title="Buscar" placeholder=" Buscar..." /> 
             <input type="submit" value="Buscar" class="Boton BuscarBoton" title="Buscar articulos" />
             </form>
-
         </div>
-    
+        {% endif %}
+    <!-- fin barra de busqueda -->
+
         <div class="contenido">
     		{% block content %}
     		{% endblock %}
@@ -72,4 +75,4 @@
         </footer>
     </div>
 </body>
-</http>
+</html>
