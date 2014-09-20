@@ -1,25 +1,64 @@
 body{
     min-width: 1200px; 
     min-height: 600px; 
-    margin: 0px 100px; 
-    font-family: "Trebuchet MS";
+    margin: 0px; 
+    font-family:  Verdana, Arial, sans-serif;
+    background-color: Gainsboro;
+    font-size: medium;
+}
+
+div#BarraBusqueda{
+    margin-top: 20px;
+}
+li.MenuItem ul li:first-child{
+    margin-top: 10px;
+}
+#ListaCategorias{
+    height: 40px;
+    list-style-type: none;
+    border-radius: 5px 0px 0px 5px;
+    margin-right: -5px;
+}
+#ListaCategorias:hover, .Boton:hover{
+    color: black; background-color: #0D98FB; ;
+    border: 1px solid #125CB5;
+    color: white;
+    font-weight:normal;
+    text-decoration:none;
+    background-image: linear-gradient(to bottom,#1A5DB3,#0D98FB);
+}
+
+#LiLogo{ /*flotar el logo a la derecha*/
+    float: left;
+    margin-left: 10px;
+}
+
+.ItemDerecha{
+    float: right;
+    margin-right: 30px;
+    font-weight: bold;
 }
 
 #NuevosArticulos{}
-#ImagenArticulo{width: 200px; height: 200px;}
+
+#ImagenArticulo{
+    width: 200px; height: 200px;
+}
+
 #Logo{
     font-size: 21px;
 }
-#buscarTitulo{
-    font-weight: bold;
-    color: white;
+
+
+#Cuerpo{
+    margin-top: -15px;
+    margin: 0px 5%;
+    
 }
 .division-menu{
-    background-color: LimeGreen;
-    height: 60px;
-    margin: 0px -100px;
+    height: 50px;
+    box-shadow: 0px 0px 10px 0px;
 }
-
 
 .barra-menu ul{
     margin: 0 auto;
@@ -27,61 +66,70 @@ body{
 }
 
 .MenuItem{
-    text-align: center;
     position: relative;
     float: left;
     width: auto;
     padding: 5px;
+    text-align: center;
+    font-size: 90%;
 }
 
 .barra-menu ul li{
     list-style: none;
                  
 }
+.Boton, #ListaCategorias{
+    border-style: none;
+    height: 40px;
+    border: 1px solid #125CB5;
+    color: white;
+    font-weight:normal;
+    text-decoration:none;
+    background-image: linear-gradient(to bottom,#0D98FB,#1A5DB3);
+}
 
-#BuscarArticulos{
-    width:450px;
-    height:25px;
-    font-size:18px;
-    margin: 5px 130px;
+#BuscarArticulos, #ListaCategorias{
     background-color: Silver;
-    color:#fff;
-    border:none;
-    border-style:none;
-    border-color:green;
+
+}
+.BuscarBoton{
+    margin-left: -5px;
+    border-radius: 0px 5px 5px 0px;
+}
+#BuscarArticulos{
+    width:500px;
+    height: 35px;
+    font-size:17px;
+    color: MidnightBlue;
+    border: 1px solid #125CB5;
+    margin-top: 0px;
 }
 
 .barra-menu ul a{
-    color: white;
-    padding: 0.5em 0;
+    color: SteelBlue;
+    padding: 0.5em 0em;
     display: block;
     text-decoration: none;
 }
-            .barra-menu ul li ul li{
-                text-align: left;
-                font-size: 14px;
 
-            }
-            .barra-menu ul li ul{
-                display: none;
-                position: absolute;
-                background-color: Steelblue;
+.barra-menu ul li ul li.SubMenuItem{
+    text-align: left;
+    font-size: 12px;
+}
 
-            }
+.barra-menu ul li ul{
+    display: none;
+    position: absolute;
+}
+
 .barra-menu ul :hover{
     color: maroon;            
 }
 
 ul li:hover ul{
-    display: block;
-                
+    display: block;       
 }
-
-.lookup_area{
-    position: fixed;
-    left: 60%;
-    width: auto;
-}            
+         
             
 .titles, .titles a{
                 color: MediumAquamarine;
@@ -99,7 +147,7 @@ ul li:hover ul{
             }
             .l-error{
                 color: red;
-                font-size: 16px;
+                font-size: 14px;
             }
 
             .formulario{
@@ -137,7 +185,9 @@ ul li:hover ul{
 
             }
             .contenido{
-                font-family: "Trebuchet MS";
+                font-family:  Verdana, Geneva, Arial, sans-serif;
+                margin: 0px 50px;
+                
             }
             
             .IS_text{
