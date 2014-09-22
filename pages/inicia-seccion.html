@@ -1,18 +1,38 @@
 {% extends "_estilo.html" %}
 {% block content %}
 
-<center><h2>eSocial Commerce™</h2></center>
+
 <div class="form_ingreso">
 
   	<form  name="inicia-seccion-form" method="POST" enctype="multipart/form-data" action="">
-  	<center><h3>Iniciar Seccion</h3></center>
- 	<hr>
-  	  <img class="seccion_imagen" src="complementos/imagenes/male.jpg" alt="#imagen"  width="150px" height="150px"><br>
-	  <p><input  name="correo" type="text" value="" class="IS_text" placeholder="Correo Electronico"></p>
-	  <p><input name="contrasena" type="contrasena" value=""  class="IS_text" placeholder="Contraseña"></p><br><hr>
-	  <p><center><input class="legueo Boton" name="logueo" height="50" type="submit" value="Iniciar seccion" style="font-size: 18px">
-	  <br><a href="/registro">Registrate ya!</a>
-	  </center> </p>
+  		<table>
+  		<!-- <caption class="Logo">eSocial Commerce™</caption> -->
+  		<tr>
+		  	<td colspan="3"><h3>Iniciar Seccion</h3>
+		 	<hr></td>
+	 	</tr>
+	 	<tr>
+	  		<td rowspan="2">
+	  			<img class="seccion_imagen" src="complementos/imagenes/male.jpg" alt="#imagen"  width="150px" height="150px" />
+	  		</td>
+	  		<td>
+				<input  name="correo" type="text" value="" class="IS_text" placeholder="Correo Electronico" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input name="contrasena" type="contrasena" value=""  class="IS_text" placeholder="Contraseña" />
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="3">
+				<hr>
+				<a href="/registro">Registrate ya!</a>
+				<input class="legueo Boton" name="logueo" height="50" type="submit" value="Iniciar seccion" style="font-size: 18px">
+			</td>
+		</tr>
+		</table>
 	</form>
   
 </div>
