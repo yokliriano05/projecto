@@ -1,23 +1,45 @@
 body{
-    min-width: 1024px; 
-    margin: 0px; 
-    font-family:  Verdana, Arial, sans-serif;
-    background-color: #fcfcfc;
-    font-size: medium;
+    /*font-family:  Verdana, Arial, sans-serif;*/
+    /*background-color: lightgrey;   */
 }
 
-div#BarraBusqueda{
-    margin-top: 20px;
-    position: relative;
-    top: 50px;
-    width: 850px;
-    margin-left: 15%;
-    
+.col-sm-8{
+    background-color:  #d9534f;
+    height: 200px;
 }
+
+div.contenido{
+    margin-top: 60px;
+    z-index: -50;
+}
+
+.greyborder{
+    border: 1px solid grey ;
+
+}
+.col-sm-2{
+    /*background-color: red;*/
+}
+#EntradaBusqueda{
+    border: none;
+    border-radius: none;
+    border-bottom: 1px solid grey;
+}
+#EntradaBusqueda{
+    min-width: 350px;
+}
+
+.division-menu{
+    box-shadow: 0px 0px 10px 0px blue;
+    background-image: linear-gradient(to bottom,white,Gainsboro);
+    z-index: 100;
+}
+
 table tr td{
     width: 200px;
     width: 200px;
 }
+
 .imagen{
     height: 200px;
     width: 200px;
@@ -34,12 +56,12 @@ li.MenuItem ul li:first-child{
     margin-top: 10px;
 }
 #ListaCategorias{
+    padding-top: 0px;
     height: 40px;
     list-style-type: none;
     margin-right: -7px;
 }
 #ListaCategorias:hover, .Boton:hover{
-    
     border: 1px solid #125CB5;
     color: white;
     font-weight:normal;
@@ -47,10 +69,6 @@ li.MenuItem ul li:first-child{
     background-image: linear-gradient(to bottom,#1A5DB3,#0D98FB);
 }
 
-#LiLogo{ /*flotar el logo a la izquirda*/
-    float: left;
-    margin-left: 10px;
-}
 
 .ItemDerecha{
     float: right;
@@ -64,42 +82,13 @@ li.MenuItem ul li:first-child{
     width: 200px; height: 200px;
 }
 
-.Logo{
-    font-size: 21px;
-}
-
-
-#Cuerpo{
-    
-    margin: 0px 5%;
-    
-}
-.division-menu{
-    height: 50px;
-    box-shadow: 0px 0px 10px 0px blue;
-    background-image: linear-gradient(to bottom,white,Gainsboro);
-    z-index: 100;
-}
-
-.barra-menu ul{
-    margin: 0 auto;
-    padding: 0px;
-}
-
-.MenuItem{
-    position: relative;
-    float: left;
-    width: auto;
-    padding: 5px;
-    text-align: center;
-    font-size: 90%;
-}
-
 .barra-menu ul li{
     list-style: none;
                  
 }
 .Boton, #ListaCategorias{
+    padding-top: 0px;
+    margin-top: 0px;
     border-style: none;
     height: 40px;
     border: 1px solid #125CB5;
@@ -110,68 +99,34 @@ li.MenuItem ul li:first-child{
 }
 
 #BuscarArticulos, #ListaCategorias{
-    background-color: Silver;
+    background-color: whiteSilver;
 
 }
 .BuscarBoton{
     margin-left: -7px;
-    
 }
 #BuscarArticulos{
-    width:600px;
-    height: 35px;
+    
+    height: 40px;
     font-size:17px;
-    color: MidnightBlue;
+    color: grey;
     border: 1px solid #125CB5;
 
-    margin-top: 0px;
-
 }
-
-.barra-menu ul a{
-    color: SteelBlue;
-    padding: 0.5em 0em;
-    display: block;
-    text-decoration: none;
-}
-
-.barra-menu ul li ul li.SubMenuItem{
-    text-align: left;
-    font-size: 12px;
-}
-
-.barra-menu ul li ul{
-    display: none;
-    position: absolute;
-}
-
-.barra-menu ul :hover{
-    color: maroon;            
-}
-
-ul li:hover ul{
-    display: block;       
-}
-         
+        
             
 .titles, .titles a{
-                color: MediumAquamarine;
-                text-align: center; 
-                
-                text-decoration: none;
-            }
-
-            a{
-                text-decoration: none;
-
-            }
-            h1{
-                color: MediumAquamarine;
-            }
-            .l-error{
-                color: red;
-                font-size: 14px;
-            }
+    color: MediumAquamarine;
+    text-align: center; 
+    text-decoration: none;
+}
+h1{
+    color: MediumAquamarine;
+}
+.l-error{
+    color: red;
+    font-size: 14px;
+}
 
             .formulario{
                 text-align: right;
@@ -188,13 +143,16 @@ ul li:hover ul{
             }
 footer{
     font-size: 12px;
-    text-align: center;
     margin-top: 15%;
     margin: 5% 0% 5% 0%;
     padding-top: 50px;
     padding-bottom: 10px;
     background-image: linear-gradient(to top,white,Gainsboro);
     /*box-shadow: 0px 0px 10px 0px;*/
+}
+.grupo-fondo{
+    margin-top: 40px;
+    text-align: center;
 }
 
             .form_ingreso{
@@ -211,13 +169,7 @@ footer{
                 padding: 10px;
 
             }
-.contenido{
-    position: relative;
-    top: 50px;
-    font-family:  Verdana, Geneva, Arial, sans-serif;
-    margin: 50px 50px;
-    padding-bottom: 50px;
-}
+
             
 .IS_text{
     font-size: 20px;

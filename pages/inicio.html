@@ -1,12 +1,18 @@
 	{% extends "_estilo.html" %}
 	{% block content %}
-		{% if todos_articulos %}
-	    	{% for articulo in todos_articulos %}
-				<img src="{{dir_image}}" alt="imagen..." class="ImagenArticulo" />
-				<h4>{{articulo}}</h4>
+		<table id="ListaImagenes">
+			<caption id="RecientesCaption">Más recientes</caption>
+			<tr>
+			{% for articulo in todos_articulos[:3] %}
+				<td class="imagen"><img src="complementos/imagenes/male.jpg" alt="imagen..." class="ImagenArticulo" /> </td>
+				<td><h4>{{articulo}}</h4></td>
 			{% endfor %}
-		{% elif not todos_articulos %}
-			<center><h3>No se ha encontrado articulos</h3></center>
-		{% endif %}
-		</div>
+			</tr>
+			<tr>
+			{% for articulo in todos_articulos[3:] %}
+				<td class="imagen"><img src="complementos/imagenes/411zEqBa+IL._SL150_.jpg" alt="imagen..." class="ImagenArticulo" /> </td>
+				<td><h4>{{articulo}}</h4></td>
+			{% endfor %}
+			</tr>
+		</table>
  	{% endblock %}

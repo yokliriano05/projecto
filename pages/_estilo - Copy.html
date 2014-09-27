@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head lang="ES">
+		<title>{{TituloPagina}}</title>
+        <link rel="stylesheet" type="text/css" href="complementos/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="complementos/css/style.css">
+    </head>
+
+	<body>
+
+	<!-- menu bar-->
+    
+    <div class="division-menu navbar navbar-defaul navbar-static-top">
+        <nav class="barra-menu container">
+            <ul>
+                <li id="LiLogo"><a href="/" class="Logo"> eSocial Commerce</a></li>
+                <div class="ItemDerecha">
+                    <li class="MenuItem"><a href="/" title="ir a inicio" > Inicio </a></li>
+                    <li class="MenuItem"><a href="/registro"> Registrate</a></li>
+                    <li class="MenuItem"><a href="/acceder"> Iniciar seccion </a></li>
+                    <li class="MenuItem"><a href="#" >Bienvenido {{Usuario}}</a>
+                        <ul>
+                            <li class="SubMenuItem"><a href="/{{Usuario}}/articulos"> Articulos</a></li>
+                            <li class="SubMenuItem"><a href="/agregar-articulo"> Agregar Articulo</a></li>
+                            <li class="SubMenuItem"><a href="#"> Configuracion</a></li>
+                            <li class="SubMenuItem"><a href="#"> Salir</a></li>
+                        </ul>
+                    </li>
+                    <li class="MenuItem"><a href="#" > Ayuda </a>
+                        <ul>
+                            <li class="SubMenuItem"><a href="#">Nosotros</a></li>
+                            <li class="SubMenuItem"><a href="#">Centro de Ayuda</a></li>
+                            <li class="SubMenuItem"><a href="#">Preguntas</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+	</div>
+    <!-- fin del menu -->
+
+    <!-- Barra de Busqueda -->
+    <div id="Cuerpo">
+        {% if not NoMostrar%}
+        <div id="BarraBusqueda">
+            <form method="get">
+            <select id="ListaCategorias" name="Categoria" title="Todas las Categorias">
+                <option value="todas">Todas las categorias</option>
+                <option value="libros">Libros</option>
+                <option value="celulares">Celulares</option>
+                <option value="computadoras">Computadoras</option>
+                <option value="fashion">Fashion &amp Moda</option>
+            </select>
+            <input type="text" id="BuscarArticulos" value="{{aBuscar}}" name="q" title="Buscar" placeholder=" Buscar..." /> 
+            <input type="submit" value="Buscar" class="Boton BuscarBoton" title="Buscar articulos" />
+            </form>
+        </div>
+        {% endif %}
+    <!-- fin barra de busqueda -->
+
+        <div class="contenido">
+    		{% block content %}
+    		{% endblock %}
+        </div>
+
+
+        <footer class="pie-info">
+          <p><a href="/">eSocial Commerce</a> &middot; 
+            <a href="#">Terminos de uso</a> &middot; 
+            <a href="#">Politicas y privacidad</a> &middot; 
+            <a href="#">Ayuda</a> &middot; 
+            <a href="#">Contacto</a><br>
+            Copyring UCATECI Rep. Dom. Developers F. G. Castillo y Y. Liriano &copy; 2014-2015.
+          </p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="complementos/js/jquery.min.js"></script>
+    <script type="text/javascript" src="complementos/js/bootstrap.js"></script>
+</body>
+</html>
